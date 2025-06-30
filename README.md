@@ -1,2 +1,2 @@
 # summerGameJam
-summer Game Jam July 2025
+actually just a redo of bug game, but now with motivation 
