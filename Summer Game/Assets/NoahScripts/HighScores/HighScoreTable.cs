@@ -17,12 +17,12 @@ public class HighScoreTable : MonoBehaviour
 
     private void Awake()
     {
-        entryContainer = transform.Find("HighScoreEntryContainer");
+        entryContainer = transform.Find("HighScoreEntryContainer").Find("Grid_Content");
         entryTemplate = entryContainer.Find("HighScoreEntryTemplate");
 
         entryTemplate.gameObject.SetActive(false);
 
-        StartCoroutine(GetRequest("https://ntrillizio.com/Highscores.php"));
+        StartCoroutine(GetHighScores("https://ntrillizio.com/Highscores.php"));
 
         //GetHighScores();
         /*highscoreEntryList = new List<HighscoreEntry>()
@@ -98,7 +98,7 @@ public class HighScoreTable : MonoBehaviour
         public string name;
     }
 
-    IEnumerator GetRequest(string uri)
+    IEnumerator GetHighScores(string uri)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get("https://ntrillizio.com/Highscores.php"))
         {
@@ -116,7 +116,7 @@ public class HighScoreTable : MonoBehaviour
                     Debug.LogError("HTTP Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.Success:
-                    Debug.Log("Received: " + webRequest.downloadHandler.text);
+                    //Debug.Log("Received: " + webRequest.downloadHandler.text);
 
                     string rawresponse = webRequest.downloadHandler.text;
 
@@ -158,4 +158,34 @@ public class HighScoreTable : MonoBehaviour
             }
         }
     }
+
+    IEnumerator ChangeHighScore(string uri)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("name", userInfo[0]);
+        form.AddField("password", userInfo[1]);
+
+        using (UnityWebRequest webRequest = UnityWebRequest.Post("https://ntrillizio.com/Change_Highscores.php", form))
+        {
+            yield return webRequest.SendWebRequest();
+
+            string[] pages = uri.Split('/');
+            int page = pages.Length - 1;
+
+            switch (webRequest.result)
+            {
+                case UnityWebRequest.Result.ConnectionError:
+                case UnityWebRequest.Result.DataProcessingError:
+                    Debug.LogError(pages[page] + ": Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.ProtocolError:
+                    Debug.LogError(pages[page] + ": HTTP Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.Success:
+                    Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
+                    break;
+            }
+        }
+    }
 }
+

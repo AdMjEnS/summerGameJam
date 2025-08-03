@@ -22,7 +22,7 @@ public class GetHighScoreInfo : MonoBehaviour
         //return St
     }*/
 
-    IEnumerator GetRequest(string uri)
+    IEnumerator GetHighScores(string uri)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
