@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485743335936374615}
   - component: {fileID: 6976491542081557908}
+  - component: {fileID: 4456403125795880081}
   m_Layer: 7
   m_Name: Image
   m_TagString: Untagged
@@ -84,6 +85,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &4456403125795880081
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484817936885977965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30.01, y: 30.01}
+    newSize: {x: 30.01, y: 30.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 9.595, y: 8.255}
+      - {x: 4.750542, y: 5.2753906}
+      - {x: -1.105, y: 3.3550003}
+      - {x: -5.315, y: 2.6750002}
+      - {x: -7.3650002, y: 1.7950001}
+      - {x: -8.775001, y: -0.025000002}
+      - {x: -8.905, y: -2.855}
+      - {x: -6.6050005, y: -5.0950003}
+      - {x: -12.435, y: -6.6050005}
+      - {x: -11.585001, y: -8.445}
+      - {x: -5.015, y: -6.2450004}
+      - {x: -0.855, y: -7.7750006}
+      - {x: 4.9350004, y: -7.6850004}
+      - {x: 9.365, y: -5.775}
+      - {x: 11.975, y: -2.185}
+      - {x: 11.915001, y: 1.9050001}
+      - {x: 10.245001, y: 7.255}
+  m_UseDelaunayMesh: 0
 --- !u!1 &3045047600753211116
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,8 +156,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7301464707947131124}
-  - component: {fileID: 3076304984446997305}
   - component: {fileID: 6895280008901723504}
+  - component: {fileID: 3924338867474298169}
   m_Layer: 7
   m_Name: Leaf
   m_TagString: Untagged
@@ -118,7 +181,34 @@ Transform:
   - {fileID: 1485743335936374615}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &3076304984446997305
+--- !u!50 &6895280008901723504
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3045047600753211116}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &3924338867474298169
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,40 +243,13 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 30.01, y: 30.01}
-    newSize: {x: 30.01, y: 30.01}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 15, y: 8}
   m_EdgeRadius: 0
---- !u!50 &6895280008901723504
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3045047600753211116}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4

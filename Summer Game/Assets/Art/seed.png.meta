@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0.04
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -106,14 +106,69 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: 948.0698, y: -550.96484}
+      - {x: 1035.9897, y: -485.0249}
+      - {x: 1110.7217, y: -411.7583}
+      - {x: 1178.127, y: -317.97705}
+      - {x: 1219.1562, y: -243.24512}
+      - {x: 1229.4136, y: -164.11719}
+      - {x: 1229.4136, y: -39.563965}
+      - {x: 1216.2256, y: 29.30664}
+      - {x: 1179.5923, y: 140.67188}
+      - {x: 1079.9497, y: 285.73975}
+      - {x: 1022.8017, y: 347.2837}
+      - {x: 857.21924, y: 473.30225}
+      - {x: 773.6953, y: 514.33154}
+      - {x: 584.6675, y: 575.8755}
+      - {x: 391.24365, y: 619.83545}
+      - {x: 145.06787, y: 663.7954}
+      - {x: -136.27588, y: 698.9634}
+      - {x: -528.98486, y: 737.062}
+      - {x: -706.29004, y: 748.78467}
+      - {x: -836.7046, y: 757.57666}
+      - {x: -967.11914, y: 767.834}
+      - {x: -1142.959, y: 767.834}
+      - {x: -1223.5522, y: 712.15137}
+      - {x: -1225.0176, y: 687.2407}
+      - {x: -1225.0176, y: 633.02344}
+      - {x: -1217.6909, y: 568.5488}
+      - {x: -1186.919, y: 357.54102}
+      - {x: -1112.187, y: 57.14795}
+      - {x: -1035.9897, y: -143.60254}
+      - {x: -974.4458, y: -274.0171}
+      - {x: -886.5259, y: -416.1543}
+      - {x: -823.5166, y: -485.0249}
+      - {x: -735.5967, y: -564.15283}
+      - {x: -589.0635, y: -641.8154}
+      - {x: -468.90625, y: -687.2407}
+      - {x: -360.47168, y: -719.478}
+      - {x: -247.6411, y: -748.78467}
+      - {x: -43.95996, y: -772.23}
+      - {x: 200.75049, y: -772.23}
+      - {x: 398.5703, y: -756.1113}
+      - {x: 621.3008, y: -703.3594}
+      - {x: 805.9326, y: -631.5581}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []

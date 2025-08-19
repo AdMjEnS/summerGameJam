@@ -380,6 +380,7 @@
 "Assets/NoahScripts/GamePlay/SpawnIngredients.cs"
 "Assets/NoahScripts/HighScores/GetHighScoreInfo.cs"
 "Assets/NoahScripts/HighScores/HighScoreTable.cs"
+"Assets/NoahScripts/HighScores/InputHighScore.cs"
 "Assets/Scripts/ChangesToPhysics.cs"
 "Assets/Scripts/DragObject.cs"
 "Assets/Scripts/IngredientPhysics.cs"

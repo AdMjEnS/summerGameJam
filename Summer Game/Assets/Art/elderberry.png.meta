@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -106,14 +106,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: 769.5, y: 803.5}
+      - {x: 195.5, y: 955.5}
+      - {x: -290.5, y: 933.5}
+      - {x: -579.5, y: 747.5}
+      - {x: -767.5, y: 964.5}
+      - {x: -961.5, y: 959.5}
+      - {x: -1032.5, y: 848.5}
+      - {x: -841.5, y: 620.5}
+      - {x: -1067.5, y: 479.5}
+      - {x: -1292.4739, y: 70.42236}
+      - {x: -1292.5, y: -378.5}
+      - {x: -1021.5, y: -734.5}
+      - {x: -401.5, y: -970.5}
+      - {x: 210.5, y: -934.5}
+      - {x: 918.5, y: -576.5}
+      - {x: 1244.5, y: -282.5}
+      - {x: 1306.5, y: 26.5}
+      - {x: 1136.5, y: 491.5}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
